@@ -1,0 +1,56 @@
+SELECT `Jmeno`, `Prijmeni`, 1.2*`Plat` AS MZDA FROM `zamestnanec`
+ORDER BY MZDA;
+
+SELECT DISTINCT Mesto, Pohlavi from zamestnanec
+ORDER BY Mesto ASC;
+
+SELECT Jmeno, Prijmeni from zamestnanec
+ORDER BY length(Prijmeni) DESC;
+
+SELECT * from zamestnanec
+WHERE Plat<15000;
+
+SELECT * from zamestnanec
+WHERE Plat BETWEEN 13000 AND 15000;
+
+SELECT * from zamestnanec
+WHERE Titul is null;
+
+SELECT concat(Prijmeni, " ", Jmeno) AS PRJM, 1.2*Plat AS MZDA
+FROM `zamestnanec`
+WHERE 1.2*Plat BETWEEN 15000 AND 20000
+ORDER BY MZDA DESC;
+
+SELECT * FROM `zamestnanec` WHERE 
+Jmeno = "Jan";
+
+SELECT * FROM `zamestnanec` WHERE 
+Jmeno LIKE "J%";
+
+SELECT * FROM `zamestnanec` WHERE Jmeno LIKE "Jan_";
+
+kdyz pouzivame masku (%, _) LIKE a NOT LIKE
+% libovolny pocet znaku (od nuly)
+_ zastupuje jeden libovolny znak
+
+pro email _%@._%._%
+minimalne jeden znak u kazde casti
+
+
+SELECT COUNT(*) AS "pocet", Mesto FROM `zamestnanec`
+GROUP BY Mesto
+ORDER BY "pocet" DESC;
+
+
+
+
+SELECT zamestnanec.Prijmeni, zamestnanec.Jmeno, zamestnanec.ID_oddeleni, oddeleni.Nazev, oddeleni.Popis
+FROM `zamestnanec`
+JOIN oddeleni ON zamestnanec.ID_oddeleni = oddeleni.ID_oddeleni;
+
+//INNER JOIN
+
+SELECT zamestnanec_skoleni.ID_zamestnanec, concat(zamestnanec.Jmeno, " ", zamestnanec.Prijmeni) As Jmeno_Prijmeni, zamestnanec_skoleni.ID_skoleni
+FROM zamestnanec_skoleni
+JOIN zamestnanec ON zamestnanec_skoleni.ID_zamestnanec = zamestnanec.ID_zamestnanec
+ORDER BY ID_zamestnanec ASC;
