@@ -8,15 +8,36 @@
 <body>
     <h1>Ping</h1>
     <?php
-        if (isset($_GET['id'])) {
+        if (isset($_GET['reset'])) {
+//            setcookie('id', rand(1, 1000));
+//            setcookie('visit', 1);
+            $id = rand(1, 1000);
+            $count = 1;
+        }
 
+        if (isset($_COOKIE['id'])) {
+            $id = htmlspecialchars($_GET['id']);
         }
         else {
-
+//            setcookie('id', rand(1, 1000));
+            $id = rand(1, 1000);
         }
+
+        if (isset($_COOKIE['count'])) {
+            $count = htmlspecialchars($_GET['count']);
+            setcookie('count', $count++);
+        }
+        else {
+            setcookie('count', 1);
+        }
+        //show data
+        print ("<p>ID: $id</p>");
+        //show count
+        print ("<p>Visits: $count</p>");
+        print ("<p><a href=\"pong_L.php?id=$id&count=$count\">PONG</a></p>");
     ?>
     <form action="" method="get">
-        <input type="submit" name="reset" value="Reset">
+        <button type="submit" name="reset">Reset</button>
     </form>
 </body>
 </html>
