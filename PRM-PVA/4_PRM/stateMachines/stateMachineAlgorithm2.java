@@ -106,7 +106,7 @@ public class stateMachineAlgorithm2 {
     public static void main(String[] args) {
         String inputString = "BBAACBC";
 
-        stateMachineAlgorithm2 stateMachine = new stateMachineAlgorithm2(new String[] {"A", "B", "C"}, inputString);
+        stateMachineAlgorithm2 stateMachine = new stateMachineAlgorithm2(new String[] {"A", "B", "BRC"}, inputString);
         stateMachine.stateMachine();
     }
 }
