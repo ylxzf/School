@@ -657,9 +657,6 @@ final class WSSharedTable extends WeatherStationAbstract {
     public WSSharedTable(String id, double meanTemperature) {
         super(id + ";", meanTemperature);
 
-        for (int i = 0; i < ; i++) {
-            
-        }
     }
 
     public String measurement() {
