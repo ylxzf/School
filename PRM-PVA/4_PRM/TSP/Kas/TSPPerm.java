@@ -18,7 +18,41 @@ public class TSPPerm {
   };
   
   public static void main(String[] args) { 
+      ArrayList<String> aPoleS = permutation("0123456789");
+      int prubezneMin = Integer.MAX_VALUE;
+      String prubezneMinString = "";
 
+      int prubeznyMax = Integer.MIN_VALUE;
+      String prubeznyMaxString = "";
+
+      for (String s : aPoleS) { //globalni cyklus programu
+          String mestaZpet = s + s.substring(0, 1);
+
+          int soucet = 0;
+          for (int i = 0; i < s.length(); i++) {
+              String dvojString = mestaZpet.substring(i, i + 2);
+
+              int x = Integer.parseInt(dvojString.substring(0, 1));
+              int y = Integer.parseInt(dvojString.substring(1, 2));
+
+              soucet += graf[x][y];
+//              System.out.printf("[%d;%d] ", x, y);
+
+          }
+          if (soucet <= prubezneMin) {
+//              System.out.println(mestaZpet + " -> " + soucet);
+              prubezneMin = soucet;
+              prubezneMinString = s;
+          }
+
+          if (soucet >= prubeznyMax) {
+              prubeznyMax = soucet;
+              prubeznyMaxString = s;
+          }
+      }
+
+      System.out.println(prubezneMinString + " -> " + prubezneMin);
+      System.out.println(prubeznyMaxString + " -> " + prubeznyMax);
   }
 
 
