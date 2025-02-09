@@ -55,8 +55,37 @@
                 <th>Heslo</th>
                 <th>Datum navstevy</th>
             </tr>
-        </table>
         ');
+
+        //cteme jednotlive radky
+        //zpusob while
+//        while ($row = $query->fetch(PDO::FETCH_BOTH)) {
+//            $login = $row["login"];
+//            $heslo = $row["heslo"];
+//            $datumNavsteva = $row["DatumNavsteva"];
+//            echo('
+//                <tr>
+//                    <td>' . $login . '</td>
+//                    <td>' . $heslo . '</td>
+//                    <td>' . $datumNavsteva . '</td>
+//                </tr>
+//            ');
+//        }
+
+        //zpusob foreach
+        foreach ($tabulka as $pacient) {
+            echo('
+               <tr>
+                    <td>' . $pacient['login'] . '</td>
+                    <td>' . $pacient['heslo'] . '</td>
+                    <td>' . $pacient['DatumNavsteva'] . '</td>
+               </tr>
+            ');
+        }
+
+        echo('</table>');
+
+//        print_r($tabulka);
 
     ?>
 
