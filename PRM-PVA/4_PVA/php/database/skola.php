@@ -56,6 +56,57 @@
                 die('Chyba při získání pohlaví' . $e->getMessage());
             }
         }
+        elseif (isset($_REQUEST['submitRocnik'])) {
+            $rocnik = htmlspecialchars($_REQUEST['rocnik']);
+            try {
+                $query = $db->prepare("SELECT * FROM studenti WHERE rocnik=?;");
+                $params = array($rocnik);
+                $query->execute($params);
+            }
+            catch (PDOException $e) {
+                die('Chyba při získání ročníku' . $e->getMessage());
+            }
+        }
+        elseif (isset($_REQUEST['submitZamereni'])) {
+            if ((isset($_REQUEST['EL'])) || (isset($_REQUEST['ST'])) || (isset($_REQUEST['IT'])) ) {
+                //alepson jeden checkbox byl zatrzeny
+                $query = "SELECT * FROM studenti WHERE";
+                $isChecked = false;
+                //zatrhnul EL?
+                if (isset($_REQUEST['EL'])) {
+                    $query = $query . " zamereni LIKE ?";
+                    $isChecked = true;
+                    $params[] = "EL";
+                }
+                //zatrhnul ST?
+                if (isset($_REQUEST['ST'])) {
+                    if ($isChecked) {
+                        $query = $query . " OR";
+                    }
+                    $query = $query . " zamereni LIKE ?";
+                    $isChecked = true;
+                    $params[] = "ST";
+                }
+                //zatrhnul IT?
+                if (isset($_REQUEST['IT'])) {
+                    if ($isChecked) {
+                        $query = $query . " OR";
+                    }
+                    $query = $query . " zamereni LIKE ?";
+                    $params[] = "IT";
+                }
+            }
+            try {
+                $query = $db->prepare($query);
+                $query->execute($params);
+            }
+            catch (PDOException $e) {
+                die('Chyba při získání zamereni' . $e->getMessage());
+            }
+        }
+        elseif (isset($_REQUEST['submitZamereniPole'])) {
+
+        }
     ?>
 
 
@@ -65,11 +116,11 @@
                 <h3>Filtrování podle pohlaví</h3>
             </legend>
             <div class="center">
-            <div>
-                Muž: <input type="radio" name="pohlavi" value="muž" required>
-                Žena: <input type="radio" name="pohlavi" value="žena" required>
-                <br>
-            </div>
+                <div>
+                    Muž: <input type="radio" name="pohlavi" value="muž">
+                    Žena: <input type="radio" name="pohlavi" value="žena">
+                    <br>
+                </div>
             </div>
             <div class="center">
                 <button type="submit" name="submitPohlavi" value="submitPohlavi">Submit</button>
@@ -80,16 +131,56 @@
             <legend>
                 <h3>Filtrovani podle rocniku</h3>
             </legend>
-        </fieldset>
-        <fieldset>
-            <legend>
-                <h3>Filtrovani podle zamereni - pole</h3>
-            </legend>
+            <div class="center">
+                <div>
+                    <label for="rocnik">Ročník: </label>
+                    <select name="rocnik" id="rocnik">
+                        <option value="1">1. Ročník</option>
+                        <option value="2">2. Ročník</option>
+                        <option value="3">3. Ročník</option>
+                        <option value="4">4. Ročník</option>
+                    </select>
+                </div>
+            </div>
+            <div class="center">
+                <button type="submit" name="submitRocnik" value="submitRocnik">Submit</button>
+            </div>
         </fieldset>
         <fieldset>
             <legend>
                 <h3>Filtrovani podle zamereni - single hodnoty</h3>
             </legend>
+            <div class="center">
+                <div>
+                    <label for="EL">EL: </label>
+                    <input type="checkbox" name="EL">
+                    <label for="ST">ST: </label>
+                    <input type="checkbox" name="ST">
+                    <label for="IT">IT: </label>
+                    <input type="checkbox" name="IT">
+                </div>
+            </div>
+            <div class="center">
+                <button type="submit" name="submitZamereni" value="submitZamereni">Submit</button>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h3>Filtrovani podle zamereni - pole</h3>
+            </legend>
+            <div class="center">
+                <div>
+                    <label for="EL">EL: </label>
+                    <input type="checkbox" name="EL">
+                    <label for="ST">ST: </label>
+                    <input type="checkbox" name="ST">
+                    <label for="IT">IT: </label>
+                    <input type="checkbox" name="IT">
+                </div>
+            </div>
+            <div>
+                <button type="submit" name="submitZamereniPole" value="submitZamereniPole">Submit</button>
+            </div>
         </fieldset>
 
     </form>

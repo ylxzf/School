@@ -1,0 +1,2 @@
+(n^2-n)/2 -> podminek
+zamen bude cca (n^2-n)/4

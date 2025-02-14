@@ -9,14 +9,14 @@ public class Card {
         this.value = null;
     }
 
-    public Card(Colour c, Value v){
-        this.colour = c;
-        this.value = v;
+    public Card(Colour colour, Value value){
+        this.colour = colour;
+        this.value = value;
     }
 
     @Override
     public String toString(){
-        return "Card [Colour=" + colour + ", Value=" + value + ", NumberValue=" + value.getValue() + "]";
+        return "Card [Colour=" + this.colour + ", Value=" + this.value + ", NumberValue=" + this.value.getValue() + "]";
     }
 
     public static void main(String[] args) {
