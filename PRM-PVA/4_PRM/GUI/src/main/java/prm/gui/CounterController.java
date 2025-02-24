@@ -9,14 +9,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class CounterController implements Initializable {
-//    @FXML
-//    private Label welcomeText;
-//
-//    @FXML
-//    protected void onHelloButtonClick() {
-//        welcomeText.setText("Welcome to JavaFX Application!");
-//    }
-
     int counter;
 
     @Override

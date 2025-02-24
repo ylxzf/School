@@ -104,8 +104,26 @@
                 die('Chyba při získání zamereni' . $e->getMessage());
             }
         }
-        elseif (isset($_REQUEST['submitZamereniPole'])) {
+        elseif (isset($_REQUEST['submitZamereniPole']) && isset($_REQUEST['zamereni'])) {
+            $zamereni_pole = $_REQUEST['zamereni'];
+            if(count($zamereni_pole) > 0){
+                $query = "SELECT * FROM studenti WHERE ";
+                for($i = 0; $i < count($zamereni_pole); $i++) {
+                    if ($i > 0) {
+                        $query .= " OR ";
+                    }
+                    $query .= "zamereni=?";
+                }
 
+            }
+            try {
+                $query = $db->prepare($query);
+                $params = $zamereni_pole;
+                $query->execute($params);
+            }
+            catch (PDOException $e) {
+                die('Chyba při získání pohlaví' . $e->getMessage());
+            }
         }
     ?>
 
@@ -171,14 +189,14 @@
             <div class="center">
                 <div>
                     <label for="EL">EL: </label>
-                    <input type="checkbox" name="EL">
+                    <input type="checkbox" name="zamereni[]" value="EL">
                     <label for="ST">ST: </label>
-                    <input type="checkbox" name="ST">
+                    <input type="checkbox" name="zamereni[]" value="ST">
                     <label for="IT">IT: </label>
-                    <input type="checkbox" name="IT">
+                    <input type="checkbox" name="zamereni[]" value="IT">
                 </div>
             </div>
-            <div>
+            <div class="center">
                 <button type="submit" name="submitZamereniPole" value="submitZamereniPole">Submit</button>
             </div>
         </fieldset>
