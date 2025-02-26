@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -36,7 +39,50 @@
 <body>
     <?php
         require_once './dbconnect.php';
-        connectDB('login');
+        $db = connectDB('login');
+
+        if (isset($_POST['submitLogin'])) {
+            $login = htmlspecialchars($_POST['login']);
+            $password = htmlspecialchars($_POST['password']);
+
+            if (empty($login) || empty($password)) {
+                echo('No password or login entered.');  
+            }
+            else {
+                $password = md5($password);
+                try {
+                    $query = $db->prepare("SELECT COUNT(*) FROM users WHERE users_login LIKE ? and users_pass LIKE ?");
+                    $params =array($login, $password);
+                    $query->execute($params);
+
+                    if ($query->fetchColumn() == 1) {
+                        session_regenerate_id();
+                        try {
+                            $query = $db->prepare("SELECT users_id FROM users WHERE users_login LIKE ? and users_pass LIKE ?");
+                            $params =array($login, $password);
+                            $query->execute($params);
+                        }
+                        catch (PDOException $e) {
+                            die($e->getMessage());
+                        }
+                        $id = $query->fetchColumn();
+                        $_SESSION[session_id()] = $id;
+                    }
+
+                    else {
+                        echo ("Invalid login or password");
+                    }
+                }
+                catch (PDOException $e) {
+                    die($e->getMessage());
+                }
+            }
+        }
+        elseif (isset($_POST['submitLogout'])) {
+            if ($_SESSION[session_id()]) {
+                unset($_SESSION[session_id()]);
+            }
+        }
 
         if (isset($_SESSION[session_id()])) {
             echo ('
@@ -49,7 +95,7 @@
                         <h3>You are logged in.</h3>
                     </div>
                     <div class="center">
-                        <button type="submit">Logout</button>
+                        <button type="submit" name="submitLogout">Logout</button>
                     </div>
                 </fieldset>
             </form>
@@ -73,7 +119,7 @@
                         </div>
                     </div>
                     <div>
-                        <button type="submit">Login</button>
+                        <button type="submit" name="submitLogin">Login</button>
                     </div>
                 </fieldset>
             </form>
