@@ -5,6 +5,7 @@ import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
+import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
@@ -31,6 +32,13 @@ public class ColourMixerController implements Initializable {
     @FXML
     private Slider sld_blue;
 
+    @FXML
+    private Label lbl_red;
+    @FXML
+    private Label lbl_green;
+    @FXML
+    private Label lbl_blue;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         //tato metoda se spusti pri startu aplikace
@@ -45,6 +53,7 @@ public class ColourMixerController implements Initializable {
                 red = newValue.intValue();
                 //prebarvi pozadi panelu
                 setPanelBackGround();
+                lbl_red.setText(String.valueOf(red));
             }
         });
 
@@ -58,6 +67,7 @@ public class ColourMixerController implements Initializable {
                 green = newValue.intValue();
                 //prebarvi pozadi panelu
                 setPanelBackGround();
+                lbl_green.setText(String.valueOf(green));
             }
         });
 
@@ -71,9 +81,13 @@ public class ColourMixerController implements Initializable {
                 blue = newValue.intValue();
                 //prebarvi pozadi panelu
                 setPanelBackGround();
+                lbl_blue.setText(String.valueOf(blue));
             }
         });
 
+        lbl_red.setText(String.valueOf(red));
+        lbl_green.setText(String.valueOf(green));
+        lbl_blue.setText(String.valueOf(blue));
         //spustime setBackGround - kvuli nastaveni prvni cerne barvy
         setPanelBackGround();
     }
