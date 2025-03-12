@@ -38,15 +38,16 @@
 </head>
 <body>
     <?php
-        require_once './dbconnect.php';
+        require_once '../dbconnect.php';
         $db = connectDB('login');
+        global $login;
 
         if (isset($_POST['submitLogin'])) {
             $login = htmlspecialchars($_POST['login']);
             $password = htmlspecialchars($_POST['password']);
 
             if (empty($login) || empty($password)) {
-                echo('No password or login entered.');  
+                echo('<script type="text/javascript">alert("No password or username entered.");</script>');
             }
             else {
                 $password = md5($password);
@@ -59,7 +60,7 @@
                         session_regenerate_id();
                         try {
                             $query = $db->prepare("SELECT users_id FROM users WHERE users_login LIKE ? and users_pass LIKE ?");
-                            $params =array($login, $password);
+                            $params = array($login, $password);
                             $query->execute($params);
                         }
                         catch (PDOException $e) {
@@ -70,7 +71,7 @@
                     }
 
                     else {
-                        echo ("Invalid login or password");
+                        echo '<script type="text/javascript">alert("Invalid username or password");</script>';
                     }
                 }
                 catch (PDOException $e) {
@@ -92,7 +93,7 @@
                         <h3>User Login</h3>
                     </legend>
                     <div class="center">
-                        <h3>You are logged in.</h3>
+                        <h3>You are logged in as ' . $login . '.</h3>
                     </div>
                     <div class="center">
                         <button type="submit" name="submitLogout">Logout</button>

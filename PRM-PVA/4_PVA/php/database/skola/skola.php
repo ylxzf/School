@@ -39,7 +39,7 @@
     </div>
     <?php
         //vlozeni pripojeni k db
-        include_once './dbconnect.php';
+        include_once '../dbconnect.php';
         $db = connectDB('skola');
 
         //pomocna promenna pro dotaz
