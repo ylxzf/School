@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Filmy</title>
     <style>
-        * {
+        * {tg  x 
             font-family: sans-serif;
         }
 

@@ -21,5 +21,4 @@ public class Counter2Application extends Application {
         primaryStage.setTitle("Counter2");
         primaryStage.show();
     }
-
 }

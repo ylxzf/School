@@ -26,9 +26,15 @@ public class TextFieldController implements Initializable {
     @FXML
     private void onClickUpdateOutput() {
         StringJoiner stringJoiner = new StringJoiner(" ");
-        for (int i = 0; i < Integer.parseInt(txt_count.getText()); i++) {
-            stringJoiner.add(txt_word.getText());
+        try {
+            for (int i = 0; i < Integer.parseInt(txt_count.getText()); i++) {
+                stringJoiner.add(txt_word.getText());
+            }
         }
+        catch (Exception e) {
+            System.out.println("Type error.");
+        }
+
         lbl_output.setText(stringJoiner.toString());
     }
 }

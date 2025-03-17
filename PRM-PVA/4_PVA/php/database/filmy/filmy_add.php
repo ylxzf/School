@@ -67,17 +67,17 @@
                     <div class="center">
                         <div class="input-container">
                             <label for="film_nazev_form">Název filmu: </label>
-                            <input type="text" name="film_nazev_form" placeholder="Název filmu">                
+                            <input type="text" name="film_nazev_form" placeholder="Název filmu" required>                
                         </div>
                         <br>
                         <div class="input-container">
                             <label for="film_zanr_form">Žánr filmu</label>
-                            <input type="text" name="film_zanr_form" placeholder="Žánr filmu">
+                            <input type="text" name="film_zanr_form" placeholder="Žánr filmu" required>
                         </div>
                         <br>
                         <div class="input-container">
                             <label for="film_rezie_form">Režie filmu</label>
-                            <input type="text" name="film_rezie_form" placeholder="Režie filmu">
+                            <input type="text" name="film_rezie_form" placeholder="Režie filmu" required>
                         </div>
                         <div class="input-container">
                             <button type="submit" name="formSubmit" value="formSubmit">Submit</button>
@@ -88,30 +88,24 @@
         ');
 
         if (isset($_REQUEST['formSubmit'])) {
-            if (empty($film_nazev_form) || empty($film_zanr) || empty($film_rezie)) {
-//                header("location: ./filmy_add.php");
+            require_once '../dbconnect.php';
+            $db = connectDB('filmy');
+
+            try {
+                $query = $db->prepare('INSERT INTO film (film_nazev, film_zanr, film_rezie)
+                                            VALUES (?, ?, ?)');
+                $params = array($_REQUEST['film_nazev_form'], $_REQUEST['film_zanr_form'], $_REQUEST['film_rezie_form']);
+                $queryResult = $query->execute($params);
+            }
+            catch (PDOException $e) {
+                echo $e->getMessage();
+            }
+
+            if (!$queryResult) {
                 echo ('<script type="text/javascript">alert("Query failed!");</script>');
             }
             else {
-                require_once '../dbconnect.php';
-                $db = connectDB('filmy');
-
-                try {
-                    $query = $db->prepare('INSERT INTO film (film_nazev, film_zanr, film_rezie)
-                                                VALUES (?, ?, ?)');
-                    $params = array($_REQUEST['film_nazev_form'], $_REQUEST['film_zanr_form'], $_REQUEST['film_rezie_form']);
-                    $queryResult = $query->execute($params);
-                }
-                catch (PDOException $e) {
-                    echo $e->getMessage();
-                }
-
-                if (!$queryResult) {
-                    echo ('<script type="text/javascript">alert("Query failed!");</script>');
-                }
-                else {
-                    echo ('<script type="text/javascript">alert("Query completed successfully!");</script>');
-                }
+                echo ('<script type="text/javascript">alert("Query completed successfully!");</script>');
             }
         }
     ?>
