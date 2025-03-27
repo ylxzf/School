@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Film adding</title>
+    <title>Film editing</title>
 
     <style>
         * {
@@ -96,6 +96,7 @@
                                             VALUES (?, ?, ?)');
                 $params = array($_REQUEST['film_nazev_form'], $_REQUEST['film_zanr_form'], $_REQUEST['film_rezie_form']);
                 $queryResult = $query->execute($params);
+
             }
             catch (PDOException $e) {
                 echo $e->getMessage();
@@ -106,6 +107,7 @@
             }
             else {
                 echo ('<script type="text/javascript">alert("Query completed successfully!");</script>');
+                header("Location: ./filmy_show.php");
             }
         }
     ?>

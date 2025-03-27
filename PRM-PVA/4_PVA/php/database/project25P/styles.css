@@ -1,0 +1,56 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header {
+    width:100%;
+    float:left;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 3px;
+}
+
+#login {
+    width:25%;
+    float: left;
+    border-style: none solid solid none;
+    border-color: black;
+    border-width: 1px;
+    padding: 3px;
+}
+
+#obsah {
+    width: 74%;
+    float: left;
+    border-style: none solid solid solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 3px;
+}
+
+table, td, th {
+    border:1px black solid;
+    border-collapse:collapse;
+    padding: 5px;
+}
+
+table {
+
+}
+
+td {
+
+}
+
+th {
+
+}
+
+.error{
+    color: red;
+}
+
+a, a:active, a:hover, a:visited {
+    color: black;
+}

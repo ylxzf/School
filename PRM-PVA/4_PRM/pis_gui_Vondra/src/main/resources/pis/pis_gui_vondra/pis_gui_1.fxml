@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" prefHeight="333.0" prefWidth="696.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="pis.pis_gui_vondra.pis_gui_1_Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <AnchorPane prefHeight="326.0" prefWidth="656.0">
+         <children>
+            <TextField fx:id="txt_rodnecislo_1" layoutX="179.0" layoutY="69.0" />
+            <TextField fx:id="txt_rodnecislo_2" layoutX="354.0" layoutY="69.0" prefHeight="25.0" prefWidth="80.0" />
+            <Label layoutX="340.0" layoutY="73.0" text="/" />
+            <Button layoutX="302.0" layoutY="135.0" mnemonicParsing="false" onAction="#onClickCheck" text="Button" />
+            <Label fx:id="lbl_output" alignment="CENTER" layoutX="114.0" layoutY="187.0" prefHeight="83.0" prefWidth="428.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
