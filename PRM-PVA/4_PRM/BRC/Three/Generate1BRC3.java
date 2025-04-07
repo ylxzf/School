@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 //import packs.onebilion.FastRandom;
 
 public class Generate1BRC3 {
-    private static final String FILE = "./measurements2.txt";
+    private static final String FILE = "./data.txt";
     protected static final List<WeatherStation> stations;
     private static final Random rnd = new Random();
 

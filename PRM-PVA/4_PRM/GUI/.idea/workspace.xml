@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3814c6c0-a64f-48eb-b215-0d8b6a8a1e50" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../BRC/One/Generate1BRC.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BRC/One/Generate1BRC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BRC/Three/Generate1BRC3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BRC/Three/Generate1BRC3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PMDPlugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prm/gui/ColourMixerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prm/gui/ColourMixerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prm/gui/Counter2Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prm/gui/Counter2Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prm/gui/CounterApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prm/gui/CounterController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prm/gui/TextFieldApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prm/gui/TextFieldController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/prm/gui/colourMixer.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/prm/gui/counter.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/prm/gui/counter2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/prm/gui/textField.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/.idea/PMDPlugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/4_PRM.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/BRC/One/Generate1BRC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/BRC/One/WeatherStation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/BRC/One/WeatherStationInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/BRC/Three/Generate1BRC3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/BRC/Three/WSFirstNaive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/BRC/Three/WSOwnTableDouble.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/BRC/Three/WSSecondNaive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/BRC/Three/WSSecondNaive2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/BRC/Three/WSSharedTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/BRC/Three/WSThirdNaive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/BRC/Three/WeatherStation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/BRC/Three/WeatherStationAbstract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/BRC/Three/measurements2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/TSP/Kas/TSPPerm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/TSP/Kas/TSPhlad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/TSP/Me/TSP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/TSP/Me/TSP_App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/backTrackAlgorithms/Cross.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/backTrackAlgorithms/CrossApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/backTrackAlgorithms/CrossWithoutBT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/backTrackAlgorithms/CrossWithoutBTApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/backTrackAlgorithms/Kriz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/factorial/factorial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/fibonacci/fibonacci_recursion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/gcdLcm/GCD_LCM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/gcdLcm/GCD_LCM_App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/maturita/bigText/BigText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/maturita/bigText/big.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/maturita/bigText/characterCount.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/maturita/bigText/newBig.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/maturita/bigText/pr_ot05.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/maturita/bigText/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/maturita/bigText/wordCount.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/maturita/virus/Virus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/maturita/virus/panNahoda.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/maturita/virus/paniWolframova.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/numerics/HornerScheme.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/numerics/HornerSchemeApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/numerics/IntervalHalving.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/numerics/NewtonSecantMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/numerics/NewtonSecantMethodApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/numerics/SecantMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/pisemky/DeliteleCisla.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/pisemky/NumerickaMetodaNewton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/pisemky/NumerickaMetodaPuleniIntervalu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/pisemky/PoleNSD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/primeNumbers/IsPrimeCheck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/primeNumbers/IsPrimeCheckApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/stateMachines/BinaryAdder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/stateMachines/stateMachineAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/4_PRM/stateMachines/stateMachineAlgorithm2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/PRM.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/backTrackAlgorithms/Cross.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/backTrackAlgorithms/CrossApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/backTrackAlgorithms/CrossWithoutBT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/backTrackAlgorithms/CrossWithoutBTApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/backTrackAlgorithms/Kriz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/factorial/factorial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/fibonacci/fibonacci_recursion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/gcdLcm/GCD_LCM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/gcdLcm/GCD_LCM_App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/maturita/bigText/BigText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/maturita/bigText/big.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/maturita/bigText/newBig.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/maturita/bigText/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/maturita/virus/Virus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/maturita/virus/panNahoda.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/maturita/virus/paniWolframova.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/numerics/HornerScheme.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/numerics/HornerSchemeApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/numerics/IntervalHalving.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/numerics/NewtonSecantMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/numerics/NewtonSecantMethodApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/numerics/SecantMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/pisemky/DeliteleCisla.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/pisemky/PoleNSD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/primeNumbers/IsPrimeCheck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/primeNumbers/IsPrimeCheckApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/stateMachines/BinaryAdder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/PRM/stateMachines/stateMachineAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/.idea/PMDPlugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/src/main/java/pis/pis_gui_vondra/pis_gui_1_Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/src/main/java/pis/pis_gui_vondra/pis_gui_1_Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pis_gui_Vondra/src/main/resources/pis/pis_gui_vondra/pis_gui_1.fxml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2szJj7G93c0KvKZIilc4GRB9jL2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ColourMixerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Counter2Application.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CounterApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TextFieldApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/School/PRM-PVA/4_PRM&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\School\PRM-PVA\4_PRM\GUI\src\main\resources\prm\gui\counter" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3814c6c0-a64f-48eb-b215-0d8b6a8a1e50" name="Changes" comment="" />
+      <created>1739452639370</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739452639370</updated>
+      <workItem from="1739452640636" duration="4512000" />
+      <workItem from="1739781375629" duration="1851000" />
+      <workItem from="1740051958702" duration="8410000" />
+      <workItem from="1740128348649" duration="300000" />
+      <workItem from="1740469211940" duration="61000" />
+      <workItem from="1740658934525" duration="804000" />
+      <workItem from="1740660481130" duration="5396000" />
+      <workItem from="1741867422350" duration="5236000" />
+      <workItem from="1742469735213" duration="3012000" />
+      <workItem from="1743077600259" duration="772000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

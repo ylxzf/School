@@ -6,7 +6,7 @@ import java.util.Locale;
 import java.util.Random;
 
 public class Generate1BRC {
-    private static final String FILE = "./measurements2.txt";
+    private static final String FILE = "./data.txt";
     protected static List<WeatherStation> stations;
 
     public static void main(String[] args) {

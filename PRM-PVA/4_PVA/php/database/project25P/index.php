@@ -72,12 +72,40 @@
                 ');
                 if (isLoggedIn()) {
                     $userID = $_SESSION[session_id()];
-                    echo('
-                            <td>
-                                <a href="./index.php?kniha_id=' . $kniha_id . '">Půjčit/Vrátit</a>
-                            </td>
-                        </tr>
-                    ');
+                    try {
+                        $queryVyp = $db -> prepare('SELECT * FROM `puj_vypujcky` WHERE `puj_vyp_idKniha` = ?');
+                        $params = array($kniha_id);
+                        $queryVyp -> execute($params);
+                    }
+                    catch (PDOException $e) {
+                        die("Database error: " . $e -> getMessage());
+                    }
+
+                    $check = false;
+                    $status = 'borrow';
+
+
+                    foreach ($queryVyp -> fetchAll() as $rowVyp) {
+                        if ($rowVyp['puj_vyp_idKniha'] == $kniha_id && $rowVyp['puj_vyp_idUzivatel'] == $_SESSION[session_id()]) {
+                            $check = true;
+                            $status = 'return';
+                            echo ('
+                                <td>
+                                    <a href="./changeStatus.php?kniha_id=' . $kniha_id . '&status=' . $status .'">Vrátit</a>
+                                </td>
+                            ');
+                            break;
+                        }
+                    }
+
+                    if ($check == false) {
+                        echo('
+                                <td>
+                                    <a href="./changeStatus.php?kniha_id=' . $kniha_id . '&status=' . $status .'">Půjčit</a>
+                                </td>
+                            </tr>
+                        ');
+                    }
                 }
                 else {
                     echo ('
