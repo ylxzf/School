@@ -98,7 +98,7 @@
                         }
                     }
 
-                    if ($check == false) {
+                    if (!$check) {
                         echo('
                                 <td>
                                     <a href="./changeStatus.php?kniha_id=' . $kniha_id . '&status=' . $status .'">Půjčit</a>
