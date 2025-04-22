@@ -1,23 +1,15 @@
-* {
-    padding: 0;
-    margin: 0;
-    font-family: Helvetica, sans-serif;
-    color: white;
-    box-sizing: border-box;
-}
-
 .content {
     width: 100%;
-    height: 100vh;
     background-color: #252525;
 }
 
 .content-container {
     display: flex;
+    justify-content: center;
 }
 
 .catalog-container {
-    width: 80%;
+    width: 100%;
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -27,11 +19,13 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-content: space-evenly;
+    justify-content: space-evenly;
     padding: 2rem;
-    background-color: #676767;
-    margin-bottom: 2rem;
+    background-color: #404040;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
 }
+
 
 .catalog-item {
     width: 15rem;
@@ -40,51 +34,21 @@
     margin: 2rem;
     padding: 2rem;
     display: flex;
-    align-content: space-evenly;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
 }
 
-.catalog-item p {
-    color: black;
-}
-
-.catalog-item img{
-    width: 2rem;
-    height: 2rem;
-}
-
-.login-container {
-    width: 20%;
+.catalog-item form {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    background-color: #343434;
-    height: 100vh;
-    padding: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
-.login-title {
-    display: flex;
-    align-content: center;
-}
-
-.login-controls {
-    display: flex;
-    padding: 1rem;
-}
-
-.login-labels {
-    /*padding: 0.5rem;*/
-}
-
-.login-inputs {
-    /*padding: 0.5rem;*/
-}
-
-.login-button {
-    display: flex;
-    align-content: center;
-}
-
-.login-button button{
-    color: black;
+.catalog-item form button {
+    margin-top: 1rem;
+    width: 8rem;
+    height: 2rem;
 }

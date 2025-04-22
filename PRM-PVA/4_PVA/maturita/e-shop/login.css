@@ -1,0 +1,54 @@
+.content-container {
+    display: flex;
+    justify-content: center;
+    /*position: relative;*/
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #404040;
+    width: 33%;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.login-container h1 {
+    color: white;
+}
+
+.login-controls {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+}
+
+.login-controls {
+    margin-top: 2rem;
+}
+
+.login-labels div{
+    margin-top: 1rem;
+}
+
+.login-form-inputs div{
+    margin-top: 1rem;
+}
+
+.login-button button {
+    margin-top: 2rem;
+    width: 8rem;
+    height: 2rem;
+}
